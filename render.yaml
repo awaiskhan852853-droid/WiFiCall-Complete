@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: wificall-app
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TOKEN_SECRET
+        generateValue: true
